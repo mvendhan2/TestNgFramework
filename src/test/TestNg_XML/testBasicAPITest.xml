@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+<!--    <listeners>-->
+<!--        <listener class-name="utils.SuiteListener"></listener>-->
+<!--    </listeners>-->
+    <test name="BasicAPITest">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class
+                    name="testcase.testBasicAPITest">
+                <methods>
+<!--                    <include name="postAccountAuthorized"/>-->
+                    <include name="getBooks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
+
